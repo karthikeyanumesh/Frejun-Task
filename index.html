@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Call Report</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Call Report</h1>
+    <form action="{{ url_for('call_report') }}" method="GET">
+      <label for="phone-number">Phone number:</label>
+      <input type="text" name="phone" id="phone-number">
+      <button type="submit">Search</button>
+    </form>
+    <div class="call-list">
+      {% if calls %}
+        {% for call in calls %}
+          <div class="call">
+            <h2>Call ID: {{ call.id }}</h2>
+            <p>From: {{ call.from_number }}</p>
+            <p>To: {{ call.to_number }}</p>
+            <p>Start Time: {{ call.start_time }}</p>
+          </div>
+        {% endfor %}
+      {% else %}
+        <p>No calls found.</p>
+      {% endif %}
+    </div>
+  </body>
+</html>

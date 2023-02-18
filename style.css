@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+  
+  form {
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  form label {
+    font-size: 1.2em;
+  }
+  
+  form input[type="text"] {
+    padding: 0.5em;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button[type="submit"] {
+    margin: 0 0.5em;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .call-list {
+    margin: 1em auto;
+  }
+  
+  .call {
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .call h2 {
+    margin: 0;
+  }
+  
+  .call p {
+    margin: 0.5em 0;
+  }
+  
